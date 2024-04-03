@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap;700&family=Urbanist:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000;
+  scrollbar-width: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", cursive;
+  background-image: url(https://images.unsplash.com/photo-1525253013412-55c1a69a5738?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* Navbar */
+
+.containerNavbar nav {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  margin-bottom: 3%;
+  background: rgba(255, 255, 255, 0.485);
+}
+
+.containerNavbar .imgLogo {
+  margin-left: 20%;
+}
+
+.containerNavbar .flags {
+  display: flex;
+  width: 75px;
+}
+
+.flagsItems img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.flags button {
+  border: none;
+  margin: 5%;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  width: 100px;
+}
+
+.navbar > .container-fluid {
+  align-items: baseline;
+  justify-content: flex-end;
+  margin: 1%;
+}
+
+#btnMenu {
+  border: none;
+}
+
+#shop {
+  border: none;
+  background-color: #ffff;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.offcanvas-body #consults {
+  background-color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+/********************************/
+
+/* ----Portfolio----*/
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin: auto;
+  width: 70%;
+  height: 60%;
+  background-color: #ffffffdf;
+  box-shadow: 2px 2px 2px #000;
+  flex-wrap: wrap;
+  gap: 4%;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.portfolio .pictureVet {
+  width: 40%;
+  height: 70%;
+}
+
+.pictureVet .photoVet {
+  position: relative;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .dataVet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
+.dataVet .nameVet {
+  margin-top: 5%;
+}
+
+.dataVet .line {
+  border-top: 5px solid #0077c0;
+  width: 99%;
+}
+
+.dataVet p {
+  font-weight: bolder;
+  text-align: justify;
+}
+
+.pictureUserProfile img{
+  background-size: auto;
+  width: auto;
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio .network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.portfolio .network img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+/* Pet information */
+
+.petAppointmentsTable {
+  display: flex;
+  text-align: center;
+  width: 95%;
+  padding: 5%;
+  flex-direction: column;
+}
+
+
+
+.modal-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.modal-body img {
+  width: 200px;
+  height: 250px;
+}
+
+@media (max-width: 1320px) {
+  .portfolio{
+    display: flex;
+    flex-direction: row;
+  }
+}

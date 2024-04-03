@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logoSinFondo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/vetUserLogin.css" />
+    <title class="translate" data-i18n="tituloLogInVet">
+      Iniciar sesión Veterinario
+    </title>
+  </head>
+
+  <body>
+    <div id="flags" class="flags">
+      <button class="flagsItems" data-language="es" id="btnEs">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Bandera_nacional_de_Espa%C3%B1a.png"
+          class="iconIdioma"
+          alt="Bandera España"
+        />
+      </button>
+      <button class="flagsItems" data-language="en" id="btnEn">
+        <img
+          src="https://img.freepik.com/vector-gratis/ilustracion-bandera-estados-unidos_53876-18165.jpg"
+          class="iconIdioma"
+          alt="Bandera EEUU"
+        />
+      </button>
+    </div>
+
+    <div class="container">
+      <form class="needs-validation p-2" novalidate>
+        <h3 class="translate" data-i18n="tituloLogInVetBienvenida">
+          ¡Bienvenido de nuevo, Doc!
+        </h3>
+
+        <img
+          src="https://static.maskokotas.com/blog/wp-content/uploads/2020/12/hare-4375952_1920-1.jpg"
+          class="imageLogin"
+          alt="conejo inicio"
+        />
+
+        <div class="data">
+          <label for="email" class="translate" data-i18n="logInEmail"
+            >Ingrese su correo electronico</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingrese su correo electronico"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <label for="email" class="translate" data-i18n="logInContraseña"
+            >Ingrese su contraseña</label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingrese su contraseña"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="buttons">
+          <button
+            type="submit"
+            id="submitLogin"
+            class="translate"
+            data-i18n="logInBoton"
+          >
+            Iniciar sesión
+          </button>
+
+          <button
+            id="submitCreateAccount"
+            class="translate"
+            data-i18n="logInCrearCuentaBtn"
+          >
+            Crear una nueva cuenta
+          </button>
+        </div>
+
+        <button id="home" class="translate" data-i18n="logInHomeBtn">
+          Inicio
+        </button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script src="hooks/guardian.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/vetUserLogin.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>

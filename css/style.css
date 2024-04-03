@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap;700&family=Urbanist:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  scrollbar-width: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", cursive;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* Navbar */
+
+.containerNavbar nav {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  background: white;
+}
+
+.navbar-nav .dropdown-menu button:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.containerNavbar .imgLogo {
+  margin-left: 20%;
+}
+
+.containerNavbar .flags {
+  display: flex;
+  width: 75px;
+}
+
+.flagsItems img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.flags button {
+  border: none;
+  margin: 5%;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  width: 100px;
+}
+
+.navbar>.container-fluid {
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-nav a:hover {
+  background-color: #38b6ff93;
+}
+
+#btnMenu {
+  border: none;
+}
+
+#shop {
+  cursor: pointer;
+  border: none;
+}
+
+#profileUser {
+  cursor: pointer;
+}
+
+#profileVet {
+  cursor: pointer;
+}
+
+/********************************/
+
+/* Promotions carousel */
+
+.containerCarrusel {
+  overflow: hidden;
+  height: min-content;
+}
+
+.carouselImage {
+  opacity: 0.8;
+  object-fit: contain;
+  width: 100%;
+  height: 90%;
+}
+
+.carouselImage img {
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.carousel-item {
+  width: 100vw;
+}
+
+/********************************/
+
+/* Our services */
+
+#backgroundImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/gatoOjosAzules.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 1px 1px #ccc;
+  margin: 2%;
+  font-size: 70px;
+}
+
+.iconContainer {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  gap: 2%;
+}
+
+.icons {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 5px 0;
+}
+
+.iconContainer>a {
+  display: block;
+}
+
+.modal-content {
+  box-shadow: 2px 2px 2px #000;
+}
+
+.modal-header .modal-title {
+  display: flex;
+  text-align: center;
+}
+
+.modal-bodyIcons {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-size: cover;
+}
+
+.modalIcon1 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://guau.com.co/cdn/shop/files/veterinarioadomicilio_800x.jpg?v=1699595668);
+}
+
+.modalIcon2 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://domestikaveterinaria.com/wp-content/uploads/DomestikaVeterinaria_Vacunas.jpg);
+}
+
+.modalIcon3 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://i.pinimg.com/564x/e5/ac/0b/e5ac0bd6a020579d8e8e475b9f9d1b9f.jpg);
+}
+
+.modalIcon4 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://i.pinimg.com/564x/b9/41/ae/b941aeaf9e5163ef94929ec323f4d732.jpg);
+}
+
+.modalIcon5 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://lescuentoque.com.co/wp-content/uploads/2022/05/viajar-con-mascotas002-copia.jpg);
+}
+
+.modalIcon6 {
+  background-image: linear-gradient(to right,
+      rgba(255, 254, 254, 0.438),
+      rgba(255, 254, 254, 0.438)),
+    url(https://i.pinimg.com/564x/38/82/be/3882bed400845e6518eaeff1a0d32342.jpg);
+}
+
+.modal-body p {
+  text-align: justify;
+  color: #000;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/********************************/
+
+/* Photo gallery */
+
+.gallery {
+  display: flex;
+  width: 100%;
+  padding: 10px 1px;
+  overflow: hidden;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  padding: 1%;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  transition: trastransform 0.5s;
+  overflow: hidden;
+  align-self: center;
+}
+
+.gallery img:hover {
+  padding: 0;
+  transform: rotate(10deg) scale(1.3);
+  cursor: default;
+}
+
+/********************************/
+
+/* veterinary cards */
+
+.backgroundImageTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+.backgroundImageTwo .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-shadow: 5px 5px 5px #fff;
+  margin: 2%;
+  font-size: 70px;
+}
+
+.containerVet {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.containerVet .cardVet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 270px;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.btnModal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.containerVet .cardVet img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.containerVet .cardVet .cardTitle {
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #38b6ff;
+  font-size: 20px;
+  color: black;
+}
+
+.containerVet .cardVet .cardText {
+  position: relative;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2%;
+}
+
+.modalProfileVetBody {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 5%;
+}
+
+.modalProfileVetBody .vetImagen img {
+  width: 200px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+/********************************/
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #38b6ff;
+  width: 100%;
+  padding: 10px;
+}
+
+footer button {
+  border: none;
+  background-color: #f9fd50;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/********************************/
+
+@media (max-width: 1100px) {
+  .card-group {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 950px) {
+  /* Promotions carousel */
+
+  .containerCarrusel {
+    object-fit: cover;
+    margin-top: 40px;
+  }
+
+  #backgroundImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/gatoOjosAzules.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+  }
+
+  /* Our services */
+  .title {
+    color: white;
+    text-shadow: 2px 2px 2px #222;
+    margin: 2%;
+    font-size: 50px;
+  }
+
+  .icons {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+  }
+
+  .lightBox {
+    position: fixed;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    z-index: 1000;
+  }
+
+  .lightBox img {
+    position: relative;
+    width: auto;
+    height: 60%;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .lightBox:target {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+  .lightBox span {
+    position: absolute;
+    width: 50%;
+    background-color: #ffffff88;
+    border-radius: 20px;
+    padding: 1%;
+  }
+
+  .lightBox span h3 {
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px #fff;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 10%;
+    background-color: white;
+    color: #851919;
+    border-radius: 100px;
+  }
+
+  /* Cards Vet */
+
+  .containerVet .cardVet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 410px;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .containerVet .cardVet img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+  }
+
+  .containerVet .cardVet .cardTitle {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #38b6ff;
+    font-size: 20px;
+    color: black;
+  }
+
+  .containerVet .cardVet .cardSubTitle {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+  }
+
+  .containerVet .cardVet .cardText {
+    position: relative;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2%;
+  }
+}
+
+.inform {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.inform h5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-group {
+  width: 80%;
+}
+
+.card {
+  padding: 5%;
+}

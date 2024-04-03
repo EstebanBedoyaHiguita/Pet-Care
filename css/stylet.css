@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0dcaf0;
+    justify-content: center;
+}
+
+/* Navbar */    
+.containerNavbar nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    background: white;
+  }
+  
+  .navbar-nav .dropdown-menu button:hover {
+    background-color: #0dcaf0;
+    color: #fff;
+  }
+  
+  .containerNavbar .imgLogo {
+    margin-left: 20%;
+  }
+  
+  .containerNavbar .flags {
+    display: flex;
+    width: 75px;
+  }
+  
+  .flagsItems img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar-brand {
+    width: 100px;
+  }
+  
+  .navbar>.container-fluid {
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+  
+  #btnMenu {
+    border: none;
+  }
+  
+  #shop{
+    border: none;
+    background-color: #ffff;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #profileUser{
+    cursor: pointer;
+  }
+/********************************/
+
+/* Carrusel */
+
+.imgCarrusel {
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.carousel-item {
+    width: 100vw;
+    height: 50vh;
+}
+
+/********************************/
+
+/* Card */
+
+
+
+.card-group {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+
+.card-img-top {
+    padding-top: 5%;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/********************************/
+
+
+/* Galeria */
+
+.galeria {
+    display: flex;
+    width: 100%;
+    padding: 10px 1px;
+    overflow: hidden;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    transition: trastransform 0.5s;
+    overflow: hidden;
+}
+
+.galeria img:hover {
+    padding: 0;
+    transform: rotate(10deg) scale(1.3);
+    cursor: default;
+}
+
+/********************************/
+
+/* Tarjetas Veterinarios */
+
+.containerVet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.containerVet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/********************************/
+
+
+/* Pie de pagina */
+
+.pieDePagina{
+    background-color: aqua;
+    height: 20px;
+    width: 100%;
+}
+
+
+
+/********************************/

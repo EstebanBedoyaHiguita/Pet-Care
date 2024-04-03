@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logoSinFondo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>PetCare</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="containerNavbar">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">
+            <img
+              class="navbar-brand imgLogo"
+              src="img/logoSinFondo.png"
+              alt="Logo"
+            />
+          </a>
+          <div class="container-fluid">
+            <div id="flags" class="flags">
+              <button class="flagsItems" data-language="es" id="btnEs">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Bandera_nacional_de_Espa%C3%B1a.png"
+                  class="iconIdioma"
+                  alt="Bandera España"
+                />
+              </button>
+              <button class="flagsItems" data-language="en" id="btnEn">
+                <img
+                  src="https://img.freepik.com/vector-gratis/ilustracion-bandera-estados-unidos_53876-18165.jpg"
+                  class="iconIdioma"
+                  alt="Bandera EEUU"
+                />
+              </button>
+            </div>
+            <button
+              class="navbar-toggler"
+              id="btnMenu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title translate"
+                  id="offcanvasNavbarLabel"
+                  data-i18n="menu"
+                >
+                  Menu
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active translate"
+                      aria-current="page"
+                      href="#"
+                      data-i18n="inicio"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active translate"
+                      id="shop"
+                      aria-current="page"
+                      href="#"
+                      data-i18n="tienda"
+                      >Tienda</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown" id="menu_hamburguesa">
+                    <a
+                      class="nav-link dropdown-toggle translate"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-i18n="inicioSesion"
+                    >
+                      Iniciar sesión
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          href="userLogin.html"
+                          data-i18n="cliente"
+                          class="translate"
+                        >
+                          <button class="dropdown-item">Cliente</button>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="vetUserLogin.html"
+                          data-i18n="veterinario"
+                          class="translate"
+                        >
+                          <button class="dropdown-item">Veterinario</button>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      class="nav-link active translate"
+                      aria-current="page"
+                      id="profileUser"
+                      data-i18n="irAlPerfil"
+                      >Ir al perfil</a
+                    >
+                    <a
+                      class="nav-link active translate"
+                      aria-current="page"
+                      id="profileVet"
+                      data-i18n="irAlPerfil"
+                      >Ir al perfil</a
+                    >
+                  </li>
+                  <li>
+                    <button
+                      class="btn btn-danger translate"
+                      id="btnLogOutVet"
+                      data-i18n="cerrarSesion"
+                    >
+                      Cerrar sesion
+                    </button>
+                    <button
+                      class="btn btn-danger translate"
+                      id="btnLogOutUser"
+                      data-i18n="cerrarSesion"
+                    >
+                      Cerrar sesion
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main container -->
+    <div class="container-fluid mainContainer">
+      <!-- Promotions carousel -->
+      <div class="containerCarrusel">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+
+          <div class="carousel-inner p-0">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="./img/publicidad1.jpeg"
+                class="d-block carouselImage"
+                alt="publicidad1"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/publicidad2.jpeg"
+                class="d-block carouselImage"
+                alt="publicidad2"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/publicidad3.jpeg"
+                class="d-block carouselImage"
+                alt="publicidad3"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/publicidad4.jpeg"
+                class="d-block carouselImage"
+                alt="publicidad4"
+              />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./img/publicidad5.jpeg"
+                class="d-block carouselImage"
+                alt="publicidad5"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br />
+
+      <!-- Our services -->
+      <div class="containerImg">
+        <div id="backgroundImage">
+          <h2 class="title translate" data-i18n="nuestrosServicios">
+            Nuestros servicios
+          </h2>
+
+          <div class="iconContainer">
+            <a href="#consultaVeterinaria">
+              <img
+                src="https://guau.com.co/cdn/shop/files/veterinarioadomicilio_800x.jpg?v=1699595668"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons"
+                alt="Consulta veterinaria"
+              />
+            </a>
+
+            <a href="#icon2">
+              <img
+                src="https://domestikaveterinaria.com/wp-content/uploads/DomestikaVeterinaria_Vacunas.jpg"
+                class="icons"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons2"
+                alt="Vacunacion y desparacitacion"
+              />
+            </a>
+
+            <a href="#icon3">
+              <img
+                src="https://i.pinimg.com/564x/e5/ac/0b/e5ac0bd6a020579d8e8e475b9f9d1b9f.jpg"
+                class="icons"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons3"
+                alt="Toma de muestras"
+              />
+            </a>
+
+            <a href="#icon4">
+              <img
+                src="https://i.pinimg.com/564x/b9/41/ae/b941aeaf9e5163ef94929ec323f4d732.jpg"
+                class="icons"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons4"
+                alt="Radiografia"
+              />
+            </a>
+
+            <a href="#icon5">
+              <img
+                src="https://lescuentoque.com.co/wp-content/uploads/2022/05/viajar-con-mascotas002-copia.jpg"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons5"
+                alt="Certificados de viaje"
+              />
+            </a>
+
+            <a href="#icon6">
+              <img
+                src="https://i.pinimg.com/564x/38/82/be/3882bed400845e6518eaeff1a0d32342.jpg"
+                class="icons"
+                data-bs-toggle="modal"
+                data-bs-target="#modalIcons6"
+                alt="Servicio de eutanasia"
+              />
+            </a>
+
+            <!-- icon1 -->
+          </div>
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="consultasVeterinarias"
+                    >
+                      Consulta Veterinaria
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon1">
+                    <p data-i18n="text1ConsultasVeterinarias" class="translate">
+                      ¡Porque la salud de tu peludo merece la atención más
+                      cercana! Nuestros veterinarios a domicilio están listos
+                      para brindar consultas personalizadas y resolver todas las
+                      inquietudes sobre la salud de tu mascota.
+                    </p>
+                    <p data-i18n="text2ConsultasVeterinarias" class="translate">
+                      ¡Tu amigo peludo se merece lo mejor, y nosotros estamos
+                      aquí para proporcionarlo!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon2 -->
+
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons2"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="servicio2"
+                    >
+                      Vacunación y desparasitación de tu mascota
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon2">
+                    <p class="translate" data-i18n="text1servicio2">
+                      Protege a tu compañero de cuatro patas con nuestro
+                      servicio de vacunación y desparasitación a domicilio.
+                      Mantener a tu mascota sana es nuestra prioridad, y lo
+                      hacemos de la manera más conveniente para ti.
+                    </p>
+                    <p class="translate" data-i18n="text1servicio2">
+                      ¡Tu amor por ellos, combinado con nuestra atención
+                      experta, es la receta perfecta para una vida feliz y
+                      saludable!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon3 -->
+
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons3"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="servicio3"
+                    >
+                      Vacunación y desparasitación de tu mascota
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon3">
+                    <p class="translate" data-i18n="text1servicio3">
+                      En PetCare entendemos que algunas pruebas son necesarias
+                      para garantizar la salud óptima de tu mascota. Nuestro
+                      servicio de toma de muestras se realiza en la comodidad de
+                      tu hogar, minimizando el estrés para tu peludo.
+                    </p>
+                    <p class="translate" data-i18n="text1servicio3">
+                      ¡Cuidamos de cada detalle para que tú y tu mascota se
+                      sientan tranquilos y seguros!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon4 -->
+
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons4"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="servicio4"
+                    >
+                      Radiografía y Ecografía
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon4">
+                    <p class="translate" data-i18n="text1servicio4">
+                      La tecnología de vanguardia se encuentra ahora en la
+                      puerta de tu casa. Con nuestros servicios de radiografía y
+                      ecografía a domicilio, obtén diagnósticos precisos sin
+                      tener que salir. Tu tranquilidad y la salud de tu mascota
+                      son nuestra prioridad.
+                    </p>
+                    <p class="translate" data-i18n="text2servicio4">
+                      ¡Confía en nosotros para proporcionar atención veterinaria
+                      avanzada con la comodidad que te mereces!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon5 -->
+
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons5"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="servicio5"
+                    >
+                      Certificados de viaje
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon5">
+                    <p class="translate" data-i18n="text1servicio5">
+                      ¿Planeando una aventura con tu amigo peludo? En PetCare,
+                      hacemos que el proceso sea suave y sin complicaciones.
+                      Nuestros certificados de viaje garantizan que tu mascota
+                      esté lista para embarcarse en cualquier travesía contigo.
+                    </p>
+                    <p class="translate" data-i18n="text2servicio5">
+                      ¡Viaja con confianza, sabiendo que cuidamos de la salud y
+                      bienestar de tu compañero durante todo el trayecto!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon6 -->
+
+          <div class="containerModalIcons">
+            <div
+              class="modal fade"
+              id="modalIcons6"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2
+                      class="modal-title fs-5 translate"
+                      data-i18n="servicio6"
+                    >
+                      Servicio de Eutanasia
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon6">
+                    <p class="translate" data-i18n="text1servicio6">
+                      En momentos difíciles, PetCare está aquí para brindar
+                      apoyo compasivo. Nuestro servicio de eutanasia a domicilio
+                      se realiza con la máxima empatía y respeto, permitiéndote
+                      despedirte de tu querido amigo en un entorno familiar.
+                    </p>
+                    <p class="translate" data-i18n="text2servicio6">
+                      Tu mascota merece despedirse con dignidad y amor, y
+                      nosotros nos aseguramos de que así sea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="inform">
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h5
+                class="card-title translate"
+                data-i18n="tituloTextoInformativo"
+              >
+                Ahorra Tiempo y Dinero
+              </h5>
+              <p class="card-text translate" data-i18n="textoInformativo">
+                ¿Te preocupa el costo del transporte o no tienes tiempo para
+                llevar a tu mascota a la veterinaria? Descubre las ventajas de
+                nuestras consultas domiciliarias. Ahorra dinero en transporte y
+                tiempo valioso, permitiendo que nuestros veterinarios expertos
+                atiendan a tu mascota en el entorno familiar de tu hogar.
+                Simplifica la atención veterinaria y maximiza la comodidad.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5
+                class="card-title translate"
+                data-i18n="tituloTextoInformativo2"
+              >
+                Cuida a tus Mascotas sin Salir de Casa
+              </h5>
+              <p class="card-text translate" data-i18n="textoInformativo2">
+                Descubre la comodidad del cuidado veterinario en casa. Invitamos
+                a todos los dueños de mascotas a disfrutar de consultas desde la
+                comodidad de su hogar. Con solo unos clics, tendrás acceso a
+                profesionales veterinarios, eliminando la necesidad de
+                desplazamientos. ¡Haz que el bienestar de tus mascotas sea tan
+                fácil como estar en casa!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5
+                class="card-title translate"
+                data-i18n="tituloTextoInformativo3"
+              >
+                Sé el Veterinario del Futuro
+              </h5>
+              <p class="card-text translate" data-i18n="textoInformativo3">
+                ¿Te preocupa el costo del transporte o no tienes tiempo para
+                llevar a tu mascota a la veterinaria? Descubre las ventajas de
+                nuestras consultas domiciliarias. Ahorra dinero en transporte y
+                tiempo valioso, permitiendo que nuestros veterinarios atiendan a
+                tu mascota en el entorno familiar de tu hogar. Simplifica la
+                atención veterinaria y maximiza la comodidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo gallery -->
+      <div class="gallery">
+        <img
+          src="https://i.pinimg.com/564x/d7/7e/64/d77e6480f08e5bd4f4bc615ca8b4938b.jpg"
+          alt="image1"
+        />
+
+        <img
+          src="https://i.pinimg.com/564x/47/15/85/471585ac4efdd66975de3bc1e96392a3.jpg"
+          alt="image2"
+        />
+
+        <img
+          src="https://i.pinimg.com/564x/7c/78/4e/7c784e0fddce6faa2f7fd6b5aa898e82.jpg"
+          alt="image3"
+        />
+
+        <img
+          src="https://i.pinimg.com/564x/69/2c/15/692c156f3da740718453fd9c2e83dc03.jpg"
+          alt="image4"
+        />
+
+        <img
+          src="https://i.pinimg.com/564x/ba/c5/e1/bac5e153506f4957ab1f75d93f5a1b94.jpg"
+          alt="image5"
+        />
+
+        <img
+          src="https://i.pinimg.com/564x/eb/97/bb/eb97bbb120dc8871dbe0e8558f6f0312.jpg"
+          alt="image6"
+        />
+      </div>
+
+      <!-- Veterinary cards -->
+
+      <div class="backgroundImageTwo">
+        <h2 class="title translate" data-i18n="nuestrosVeterinarios">
+          Veterinarios
+        </h2>
+        <div class="containerVet"></div>
+      </div>
+      <br />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="translate"
+          data-i18n="contactanos"
+        >
+          Contactanos
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 translate" data-i18n="contactanos">
+                  Contactanos
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div class="col-12">
+                    <label
+                      for="inputName"
+                      class="form-label translate"
+                      data-i18n="contactanosNombre"
+                    >
+                      Nombre Completo
+                    </label>
+                    <input type="text" class="form-control" id="inputName" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      for="inputEmail4"
+                      class="form-label translate"
+                      data-i18n="contactanosEmail"
+                    >
+                      Email
+                    </label>
+                    <input type="email" class="form-control" id="inputEmail" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      for="inputPhone"
+                      class="form-label translate"
+                      data-i18n="contactanosTelefono"
+                    >
+                      Teléfono
+                    </label>
+                    <input type="tel" class="form-control" id="inputPhone" />
+                  </div>
+
+                  <div class="col-12">
+                    <label
+                      for="inputTopic"
+                      class="form-label translate"
+                      data-i18n="contactanosAsunto"
+                    >
+                      Asunto
+                    </label>
+                    <input type="text" class="form-control" id="inputTopic" />
+                  </div>
+
+                  <div class="col-12">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label translate"
+                      data-i18n="contactanosMensaje"
+                    >
+                      Mensaje
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="symptoms"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-success translate"
+                      data-i18n="contactanosBtnEnviar"
+                      id="submit_form"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+{
+  "users": [
+    {
+      "id": "4cd0",
+      "birthdate": "1997-10-29",
+      "email": "pipeposada2910@gmail.com",
+      "passwordUser": "User123*",
+      "nameUser": "Felipe Posada",
+      "documentNumberUser": "1126910000",
+      "cellphoneUser": "3125295136",
+      "directionUser": "Santander",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707267271/zr5npyvemm3gqnpzda9b.jpg"
+    },
+    {
+      "id": "ec5e",
+      "birthdate": "1997-05-18",
+      "email": "keity@gmail.com",
+      "passwordUser": "KeityMuñoz1318@",
+      "nameUser": "Keity",
+      "documentNumberUser": "1017249128",
+      "cellphoneUser": "3218781319",
+      "directionUser": "cll 9 sur #79c-115"
+    },
+    {
+      "id": "01c3",
+      "birthdate": "2013-10-31",
+      "email": "Firulais@gmail.com",
+      "passwordUser": "RiwiCode123!",
+      "nameUser": "juanito alimaña",
+      "documentNumberUser": "12345678",
+      "cellphoneUser": "3456789123",
+      "directionUser": "cr 10#45-69"
+    },
+    {
+      "id": "3a3d",
+      "birthdate": "2024-02-13",
+      "email": "cassandra@gmail.com",
+      "passwordUser": "Riwi123*",
+      "nameUser": "Cassandra Clare",
+      "documentNumberUser": "564654231",
+      "cellphoneUser": "5234654",
+      "directionUser": "cr 10#45-69"
+    },
+    {
+      "id": "385e",
+      "birthdate": "1995-06-02",
+      "email": "respaldoluisap@gmail.com",
+      "passwordUser": "Luisa123*",
+      "nameUser": "Luisa Pantoja",
+      "documentNumberUser": "1085321940",
+      "cellphoneUser": "3185308225",
+      "directionUser": "calle 61 # 56-51"
+    },
+    {
+      "id": "1a44",
+      "birthdate": "2024-02-08",
+      "email": "bedoya102@hotmail.com",
+      "passwordUser": "Riwi2023*",
+      "nameUser": "Esteban",
+      "documentNumberUser": "233123",
+      "cellphoneUser": "3122188251",
+      "directionUser": "call 56 57-7"
+    },
+    {
+      "id": "1841",
+      "birthdate": "2000-01-29",
+      "email": "aleja@gmail.com",
+      "passwordUser": "User123*",
+      "nameUser": "Aleja",
+      "documentNumberUser": "12323",
+      "cellphoneUser": "234234",
+      "directionUser": "call 56 57-7"
+    }
+  ],
+  "veterinarians": [
+    {
+      "id": "d697",
+      "emailVet": "mariaferandez@gmail.com",
+      "passwordVet": "User123*",
+      "birthDate": "1999-04-18",
+      "nameVet": "María Fernández",
+      "documentNumberVet": "7854963201",
+      "cellphoneVet": "301548125",
+      "professionalCard": "2467521",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "Mi objetivo es establecer un vínculo fuerte con cada familia y garantizar que sus adorables compañeros estén en las mejores manos.",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707262960/hyjt81yjvc1l2czpvndu.jpg"
+    },
+    {
+      "id": "d6927",
+      "emailVet": "JavierMmorales@gmail.com",
+      "passwordVet": "User123*",
+      "birthDate": "2000-03-08",
+      "nameVet": "Javier Morales",
+      "documentNumberVet": "7845193852",
+      "cellphoneVet": "306895124",
+      "professionalCard": "2143574",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "Me a mantener a tus mascotas protegidas contra enfermedades mediante un programa completo de vacunación y desparasitación.",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707141217/bdf8kxi6tko7gpyr5xqm.jpg"
+    },
+    {
+      "id": "d6397",
+      "emailVet": "caroHerre24@gmail.com",
+      "passwordVet": "User123*",
+      "birthDate": "1994-10-21",
+      "nameVet": "Carolina Herrera",
+      "documentNumberVet": "7844521024",
+      "cellphoneVet": "330698456",
+      "professionalCard": "1276548",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "En PetCare, mi objetivo es permitir que tus amigos peludos se despidan con dignidad y amor.",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707263115/n2tojuhpfv1hwkbbzssq.png"
+    },
+    {
+      "id": "d6957",
+      "emailVet": "AleMtz@gmail.com",
+      "passwordVet": "User123*",
+      "birthDate": "1975-09-30",
+      "nameVet": "Alejandro Martínez",
+      "documentNumberVet": "1236879630",
+      "cellphoneVet": "302356985",
+      "professionalCard": "6447851",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "Confía en mí para que tus mascotas estén listas para explorar el mundo contigo.",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707263283/e3dcogtb8zablldg8n2l.jpg"
+    },
+    {
+      "id": "d69a7",
+      "emailVet": "gabvarg@outlook.com",
+      "passwordVet": "User123*",
+      "birthDate": "1997-05-20",
+      "nameVet": "Gabriela Vargas",
+      "documentNumberVet": "5689348521",
+      "cellphoneVet": "302454879",
+      "professionalCard": "5421486",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "¡Cuenta conmigo para cuidar de tus amigos peludos de una manera única y adaptada a sus necesidades individuales!",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707141217/bdf8kxi6tko7gpyr5xqm.jpg"
+    },
+    {
+      "id": "d6567",
+      "emailVet": "Ricardo_nav@hotmail.com",
+      "passwordVet": "User123*",
+      "birthDate": "1986-08-31",
+      "nameVet": "Ricardo Navarro",
+      "documentNumberVet": "1015645421",
+      "cellphoneVet": "301549863",
+      "professionalCard": "5845236",
+      "areaOfSpecialization": "Veterinario",
+      "descriptionVetEdit": "¡Salta y baila, amigo peludo! Soy el coreógrafo ortopédico que hará que tus mascotas se muevan con gracia y alegría.",
+      "urlPhoto": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707141217/bdf8kxi6tko7gpyr5xqm.jpg"
+    }
+  ],
+  "formulary-index": [],
+  "pets": [
+    {
+      "id": "ccaa",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707139994/rw7lvrcz7klhzh7b02pd.jpg",
+      "name": "Trebol",
+      "type": "perro",
+      "gender": "Macho",
+      "ageInput": "135",
+      "foodInput": "D1",
+      "weightPetInput": "10",
+      "userId": "01c3"
+    },
+    {
+      "id": "e9ee",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707143819/s6j555fdeppkpaajifp6.jpg",
+      "name": "Apolo",
+      "type": "perro",
+      "gender": "Macho",
+      "ageInput": "15",
+      "foodInput": "GrandVita",
+      "weightPetInput": "12",
+      "userId": "385e"
+    },
+    {
+      "id": "1a28",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707267204/u45joxtqi79ypcqaxz7c.jpg",
+      "name": "Trosky",
+      "type": "Conejo",
+      "gender": "Macho",
+      "ageInput": "42",
+      "foodInput": "Finca",
+      "weightPetInput": "5",
+      "userId": "4cd0"
+    },
+    {
+      "id": "e32f",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707267244/xcjcxetmzk6acjszilpx.jpg",
+      "name": "Lexa",
+      "type": "Conejo",
+      "gender": "Hembra",
+      "ageInput": "35",
+      "foodInput": "Finca",
+      "weightPetInput": "3",
+      "userId": "4cd0"
+    },
+    {
+      "id": "26bf",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707306182/ma2wb7ftr0bgfknmkj8c.jpg",
+      "name": "Roco",
+      "type": "perro",
+      "gender": "Macho",
+      "ageInput": "36",
+      "foodInput": "dieta barf",
+      "weightPetInput": "4",
+      "userId": "1841"
+    },
+    {
+      "id": "4218",
+      "formFile": "http://res.cloudinary.com/dlghqei9h/image/upload/v1708398340/cmeukymhcd5yickfms0w.jpg",
+      "name": "Zaian",
+      "type": "perro",
+      "gender": "macho",
+      "ageInput": "96",
+      "foodInput": "dieta barf",
+      "weightPetInput": "36",
+      "userId": "1a44"
+    }
+  ],
+  "veterinaryConsultations": [
+    {
+      "id": "4211",
+      "vetId": "d6397",
+      "userId": "1841",
+      "namePet": "Roco",
+      "genderPet": "Macho",
+      "typePet": "perro",
+      "petSymptoms": "sueño",
+      "creationDate": "7/2/2024",
+      "date": "2024-02-08",
+      "hour": "09:43",
+      "status": "Cancelada",
+      "addressCites": "cr 45# 33-3",
+      "photoPet": "http://res.cloudinary.com/dlghqei9h/image/upload/v1707306182/ma2wb7ftr0bgfknmkj8c.jpg"
+    },
+    {
+      "id": "ef04",
+      "vetId": "d697",
+      "userId": "1a44",
+      "namePet": "Zaian",
+      "genderPet": "macho",
+      "typePet": "perro",
+      "petSymptoms": "fiebre",
+      "creationDate": "19/2/2024",
+      "date": "2024-02-14",
+      "hour": "22:10",
+      "status": "Programada",
+      "addressCites": "caddasa",
+      "photoPet": "http://res.cloudinary.com/dlghqei9h/image/upload/v1708398340/cmeukymhcd5yickfms0w.jpg"
+    }
+  ]
+}
